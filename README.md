@@ -34,16 +34,22 @@ flask_app
     └── config.py
 
 for windows use set and for ubuntu use export
+
 set SECRET_KEY="your secret key"
+
 set DATABASE_URI=postgresql://username:password@host:port/database_name <---------- double check
 
 in flask_app folder
 
 set FLASK_APP=app
+
 set FLASK_ENV=development
 
 flask shell
+
 from app.extensions import db
+
 from app.models.post import Post
+
 db.create_all()
 
